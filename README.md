@@ -7,8 +7,8 @@
 - [x] Day 3 — SQL
 - [x] Day 4 — Python EDA
 - [x] Day 5 — Tableau Dashboard
-- [ ] Day 6 — Business Case Study
-- [ ] Day 7 — Portfolio Publication
+- [x] Day 6 — Business Case Study
+- [x] Day 7 — Portfolio Publication
 
 ## Day 1: Data Cleaning
 Raw dataset (4,100 rows) cleaned down to 3,933 analysis-ready rows: duplicates, missing values, outliers, and formatting inconsistencies were identified and handled. Full documentation available in `docs/` (Indonesian and English versions).
@@ -23,8 +23,11 @@ Imported the cleaned dataset into MySQL and wrote 15 business queries — from c
 Performed exploratory data analysis in Python (pandas, matplotlib, seaborn) on the cleaned dataset — covering data structure validation, descriptive statistics, revenue/quantity distribution (histogram & boxplot), category and region breakdown, a monthly revenue time series, and a correlation heatmap between quantity, unit price, and revenue. Findings cross-validate the Day 2 and Day 3 results: revenue is strongly right-skewed (mean $78.02 vs. median $52.84), ~60% of orders are single-item purchases, Electronics and the East region remain dominant across every cut of the data, monthly revenue is highly volatile with no clear seasonality, and revenue correlates with both price (0.68) and quantity (0.62) while the two are nearly independent of each other (0.02) — reinforcing the bundling/cross-sell opportunity. Notebook and full documentation available in `python/` and `docs/` (Indonesian and English versions).
 
 ## Day 5: Tableau Dashboard
-Built an interactive dashboard in Tableau Public on the same cleaned dataset — 4 KPI cards (Total Revenue, Total Orders, Total Customers, Average Order Value), 5 charts (Monthly Revenue Trend, Revenue by Category, Revenue by Region, Top 10 Products, Orders by Category), and 3 connected filters (Date, Region, Category). The dashboard re-confirms every prior finding — East region dominance ($229,821 in revenue), Electronics as the top category ($79,289), and a low AOV ($78.02) relative to average revenue per customer — while making the data explorable in real time rather than fixed in a static report. 
+Built an interactive dashboard in Tableau Public on the same cleaned dataset — 4 KPI cards (Total Revenue, Total Orders, Total Customers, Average Order Value), 5 charts (Monthly Revenue Trend, Revenue by Category, Revenue by Region, Top 10 Products, Orders by Category), and 3 connected filters (Date, Region, Category). The dashboard re-confirms every prior finding — East region dominance ($229,821 in revenue), Electronics as the top category ($79,289), and a low AOV ($78.02) relative to average revenue per customer — while making the data explorable in real time rather than fixed in a static report.
 **[View the live dashboard on Tableau Public](https://public.tableau.com/app/profile/alya.shandy/viz/E-CommerceSalesPerformanceDashboard_17876681702130/E-CommerceSalesPerformanceDashboard)**. Full documentation available in `docs/` (Indonesian and English versions).
+
+## Day 6: Business Case Study
+Synthesized every prior finding into a 10-slide business case study aimed at leadership rather than fellow analysts: business problem, dataset and data quality, a KPI overview that separates gross from Completed-only figures, sales performance, product/category and customer/regional analysis, 5 key insights, and 4 concrete recommendations. Core diagnosis: a healthy, high-retention business (98.8% repeat orders) carrying two addressable risks — 74.4% revenue concentration in the East region, and an Average Order Value ($78.33) far below average revenue per customer ($288.59). Recommendations cover regional diversification, bundling/cross-sell, new-customer acquisition, and lightweight demand forecasting. Available as PPTX and PDF in `presentation/` (Indonesian and English versions).
 
 ## Folder Structure
 - `data/` — `raw_sales_data.csv` and `cleaned_sales_data.csv`
@@ -32,4 +35,12 @@ Built an interactive dashboard in Tableau Public on the same cleaned dataset —
 - `sql/` — `business_analysis.sql` (15 business queries)
 - `python/` — `01_sales_eda.ipynb` (Python EDA notebook, ID and EN)
 - `tableau/` — dashboard screenshots (KPI cards, charts, full dashboard, filter demo)
-- `docs/` — full Day 1, Day 2, Day 3, Day 4, and Day 5 reports (ID and EN)
+- `presentation/` — `Day6_Business_Case_Study` (PPTX and PDF, ID and EN)
+- `docs/` — full Day 1, Day 2, Day 3, Day 4, Day 5, Day 6 reports (ID and EN)
+
+## Day 7: Portfolio Publication
+Final review and consolidation of the entire 7-day project: verified folder structure, confirmed every deliverable (raw/cleaned data, Excel workbook, SQL script, Python notebook, Tableau dashboard screenshots, business case study) is pushed to GitHub, and published a 6-part LinkedIn series recapping the project day by day.
+
+## Live Links
+- **GitHub Repository:** this repo
+- **Tableau Dashboard:** [E-Commerce Sales Performance Dashboard](https://public.tableau.com/app/profile/alya.shandy/viz/E-CommerceSalesPerformanceDashboard_17876681702130/E-CommerceSalesPerformanceDashboard)
