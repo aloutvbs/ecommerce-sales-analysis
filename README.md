@@ -35,7 +35,7 @@ Synthesized every prior finding into a 10-slide business case study aimed at lea
 - `sql/` — `business_analysis.sql` (15 business queries)
 - `python/` — `01_sales_eda.ipynb` (Python EDA notebook, ID and EN)
 - `tableau/` — dashboard screenshots (KPI cards, charts, full dashboard, filter demo)
-- `presentation/` — `Day6_Business_Case_Study` (PPTX and PDF, ID and EN)
+- `presentation_business_case_study/` — `Day6_Business_Case_Study` (PPTX and PDF, ID and EN)
 - `docs/` — full Day 1, Day 2, Day 3, Day 4, Day 5, Day 6 reports (ID and EN)
 
 ## Day 7: Portfolio Publication
